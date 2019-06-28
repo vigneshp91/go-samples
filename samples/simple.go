@@ -34,6 +34,12 @@ func main() {
 	s[2] = "hello"
 	mapvar[1] = "v"
 	mapvar[2] = "v1"
+	for _, num := range s {
+		fmt.Println(num)
+	}
+	for k, v := range mapvar {
+		fmt.Printf("%d -> %s", k, v)
+	}
 	fmt.Println(mapvar, len(mapvar))
 	fmt.Println(s)
 }
